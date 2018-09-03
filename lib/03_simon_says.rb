@@ -22,7 +22,7 @@ def titleize (str)
     little_words = ["and", "the", "over"]
     arr = str.split.map.with_index do |word, idx|
         if idx == 0 || !little_words.include?(word)
-            word = word[0].upcase + word[1..-1]
+            word = word.capitalize
         end
         word
     end
